@@ -179,6 +179,14 @@
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
         <h2>R.S.V.P.</h2>
 
+        <div class="hide success">
+          <p class="lead">Thanks! If you have any questions we'll be in touch!</p>
+        </div>
+
+        <div class="hide error">
+          <p class="lead">There was an error, how embarrising! please try again later or email jackandtiffhyde@gmail.com</p>
+        </div>
+
         <form class="form-horizontal" target="_self" method="POST" onsubmit="" action="javascript: submit()">
           <div class="form-group">
             <label class="col-sm-4 control-label lead">Name(s)</label>
@@ -260,7 +268,7 @@
       $.ajax({
         url: "https://formspree.io/tiffandjackhyde@gmail.com", 
         method: "POST",
-        data: {
+        data: { 
           name: $('#names').val(),
           email: $('#email').val(),
           phone: $('#phone').val(),
@@ -271,10 +279,12 @@
         },
         dataType: "json",
         success: function () {
-
+          $('form').hide();
+          $('.success').show();
         },
         error: function () {
-
+          $('form').hide();
+          $('.error').show();
         }
       });
     }
