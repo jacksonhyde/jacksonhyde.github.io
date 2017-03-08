@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Tiffany and Jackson are Getting Married!</title>
+  <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
   <style type="text/css">
-    * {font-family: 'Lora', serif;}
+    * {font-family: 'Lora', serif;}    
+    body {
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+
 
     .timetable {
       padding: 0;
@@ -18,7 +24,7 @@
       list-style-type: none;
     }
 
-    h1, h3 {
+    h2, h4 {
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 40px;
@@ -36,12 +42,26 @@
     }
 
     section > div{
-      border-bottom: 1px solid #eee;
-      margin-bottom: 40px;
+      padding-bottom: 40px;
+      margin-bottom: 60px;
+    }
+
+    header img {
+      display: block;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .map iframe{
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="header.png" class="hidden-xs">
+    <img src="header-small.png" class="visible-xs">
+  </header>
   <div class="container">
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
@@ -51,27 +71,29 @@
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h1>The Venue</h1>
+        <h2>The Venue</h2>
         <p class="lead">The ceremony and reception will be held at the Plush Tents camp site in East Ashling, near Chichester:<br/><br/>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80589.69675696355!2d-0.8865565384821644!3d50.860275279533994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48744de96db8cd49%3A0xf91b855285c57b6d!2sPlush+Tents+Glamping!5e0!3m2!1sen!2suk!4v1488841950917" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80589.69675696355!2d-0.8865565384821644!3d50.860275279533994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48744de96db8cd49%3A0xf91b855285c57b6d!2sPlush+Tents+Glamping!5e0!3m2!1sen!2suk!4v1488841950917" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
         <em>Plush Tents, Chapel Lane,  East Ashling, Chichester, West Sussex, PO18 9AW</em></p>
 
-        <h3>Travel</h3>
+        <h4>Travel</h4>
         <p class="lead">If you are travelling down on the day, please leave plenty of time as the Goodwood Festival of Speed is on the same day and traffic is expected to be very busy!</p>
 
-        <h3>Directions from London</h3>
+        <h4>Directions from London</h4>
         <p class="lead">Come off the A27 at Fishbourne Roundabout, by taking Fishbourne Exit. Then turn right onto Salthill Road and continue to end of the road. Turn left onto the B2178, towards the village of East Ashling. Just after the sign for Oakwood School, turn right onto Chapel Lane, drive past St. Mary Sennicotts Chapel and continue down the track for 200 yards until you see a Farm Gate on your left, signposted ‘Plush Tents’. Parking is sign-posted and located in the field on your right.</p>
 
-        <h3>Trains</h3>
+        <h4>Trains</h4>
         <p class="lead">Chichester train station is 4 miles away, you will need to get a taxi from there costing approximately £12.
         The campsite is closer to Fishbourne and Bosham train stations however there is no taxi rank and they charge a call out from Chichester.</p>
       </div>
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h1>On the Day</h1>
+        <h2>On the Day</h2>
 
-        <h3>Timetable</h3>
+        <h4>Timetable</h4>
         <ul class="timetable">
           <li class="row lead">
             <strong class="col-xs-6 text-right">2:30pm</strong>
@@ -98,25 +120,25 @@
             <span class="col-xs-6">Silent disco</span>
           </li>
         </ul>
-        <h3>Food and Drink</h3>
+        <h4>Food and Drink</h4>
         <p class="lead">Dinner will be served for day guests from 5pm, please let us know if you have any special dietry requirements. A cash bar fully stocked with beers, wines and spirits will be open from 4:00pm. Light bites will be served in the evening and the father-of-the-bride will be running a whiskey bar!</p>
 
-        <h3>Entertainment</h3>
+        <h4>Entertainment</h4>
         <p class="lead">The legendary Gentle Bren will be DJing until 11pm, followed by a silent disco manned by a motley crew of misfits!</p>
       </div>
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h1>Camping &amp; Accommodation</h1>
+        <h2>Camping &amp; Accommodation</h2>
 
         <p class="lead">We are inviting all our guests -- day and evening -- to camp with us on Saturday night after the Reception. Sunday will be spent relaxing (recovering!) and enjoying the Sussex countryside.</p>
 
         <p class="lead">Please let us know if you'd like to camp when you RSVP. You can either bring your own tent or hire a bell tent (see below). There are showers and wash-room facilities on-site so don't forget your towell! </p>
 
-        <h3>Bell Tent Hire</h3>
+        <h4>Bell Tent Hire</h4>
         <p class="lead">If you prefer a little more luxury when camping, you can hire a pre-pitched 5 metre bell-tent for the night from <a href="https://wildsideglamping.co.uk/" target="_blank">Wildside Glamping</a>. The bell tents can sleep up to 6 people comfortably and furnishings can be tailored to fit your party size. Just mention 'Jack and Tiff's wedding' when contacting Wildside and they'll take care of the rest.<br/><br/>These are limited in quantity, so don't hang around!</p>
 
-        <h3>Local Accommodation</h3>
+        <h4>Local Accommodation</h4>
         <p class="lead">If camping isn't your thing, there are a number of local options:</p>
 
         <dl class="text-center">
@@ -136,95 +158,95 @@
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h1>Frequently Asked Questions</h1>
+        <h2>Questions</h2>
 
-        <h3>Is there a curfew for children?</h3>
+        <h4>Is there a curfew for children?</h4>
         <p class="lead">Children are welcome throughout the day, although we ask that all under-16s are tucked up in bed by 9pm at the latest.</p>
 
-        <h3>What about taxis?</h3><p class="lead">We advise booking a taxi in advance, especially for guests that are not camping on the saturday night as on-site phone reception is poor:</p>
+        <h4>What about taxis?</h4><p class="lead">We advise booking a taxi in advance, especially for guests that are not camping on the saturday night as on-site phone reception is poor:</p>
 
-        <h3>How late is 'until late'?</h3>
+        <h4>How late is 'until late'?</h4>
         <p class="lead">While all amplified music has to stop at 11pm, we are allowed to continue the silent disco long into the night! Unfortunately, <strong>non-camping guests</strong> will have to vacate the site by 1am at the very latest.<br/><br/>We want everyone to have a blast, but we ask all our guests to be respectful of the venue and the neighbours, especially when leaving the site.</p>
 
-        <h3>Can I pay with card at the bar?</h3>
+        <h4>Can I pay with card at the bar?</h4>
         <p class="lead">Unfortunately the bar is cash only. The nearest cash point isn't close enough to walk, so make sure you bring enough cash to keep the libations flowing! Don't worry - our bar will be subsidized to be as affordable as possible!</p>
 
-        <h3>What's the plan for Sunday?</h3>
+        <h4>What's the plan for Sunday?</h4>
         <p class="lead">We don't really have one! We're imagining most people will be slightly worse for wear, so we plan on relaxing and enjoying the campsite facilities.</p>
       </div>
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h1>R.S.V.P.</h1>
+        <h2>R.S.V.P.</h2>
 
-        <form class="form-horizontal" target="_self" onsubmit="" action="javascript: submit()">
+        <form class="form-horizontal" target="_self" method="POST" onsubmit="" action="javascript: submit()">
           <div class="form-group">
-            <label class="col-sm-4 control-label">Name(s)</label>
+            <label class="col-sm-4 control-label lead">Name(s)</label>
             <div class="col-sm-8">
               <input type="text" class="form-control" id="names" name="name" required>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-4 control-label">Email</label>
+            <label class="col-sm-4 control-label lead">Email</label>
             <div class="col-sm-8">
-              <input type="email" class="form-control" id="email" name="email">
+              <input type="email" class="form-control" id="email" name="email" required>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-4 control-label">Contact number</label>
+            <label class="col-sm-4 control-label lead">Contact number</label>
             <div class="col-sm-8">
               <input type="tel" class="form-control" id="phone" name="telephone">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-4 control-label">Will you be attending?</label>
+            <label class="col-sm-4 control-label lead">Will you be attending?</label>
             <div class="col-sm-8 form-attending">
               <div class="radio">
-                <label>
-                  <input type="radio" name="attending" value="yes">
+                <label class="lead">
+                  <input type="radio" name="attending" value="yes" required>
                   Yes, I can't wait!
                 </label>
               </div>
               <div class="radio">
-                <label>
-                  <input type="radio" name="attending" value="no">
+                <label class="lead">
+                  <input type="radio" name="attending" value="no" required>
                   Sorry, we can't make it.
                 </label>
               </div>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-4 control-label">Will you be camping?</label>
+            <label class="col-sm-4 control-label lead">Will you be camping?</label>
             <div class="col-sm-8 form-camping">
               <div class="radio">
-                <label>
-                  <input type="radio" name="camping" value="yes">
+                <label class="lead">
+                  <input type="radio" name="camping" value="yes" required>
                   Yes
                 </label>
               </div>
               <div class="radio">
-                <label>
-                  <input type="radio" name="camping" value="no">
+                <label class="lead">
+                  <input type="radio" name="camping" value="no" required>
                   No
                 </label>
               </div>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-4 control-label">Do you have any dietry requirements? <br/><small>(Day guests only)</small></label>
+            <label class="col-sm-4 control-label lead">Do you have any dietry requirements? <br/><small>(Day guests only)</small></label>
             <div class="col-sm-8">
               <textarea rows="10" class="form-control" id="diet"></textarea>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-4 control-label">Do you have any other comments or questions?</label>
+            <label class="col-sm-4 control-label lead">Do you have any other comments or questions?</label>
             <div class="col-sm-8">
               <textarea rows="10" class="form-control" id="comments"></textarea>
             </div>
           </div>
           <div class="form-group">
             <div class="col-sm-8 col-sm-offset-4">
-              <input type="submit" value="submit">
+              <input type="submit" value="Submit" class="btn btn-primary btn-lg">
             </div>
           </div>
         </form>
@@ -236,7 +258,7 @@
   <script>
     function submit() {
       $.ajax({
-        url: "https://formspree.io/jackson.hyde@alliants.com", 
+        url: "https://formspree.io/tiffandjackhyde@gmail.com", 
         method: "POST",
         data: {
           name: $('#names').val(),
@@ -247,9 +269,25 @@
           diet: $('#diet').val(),
           comments: $('#comments').val()
         },
-        dataType: "json"
+        dataType: "json",
+        success: function () {
+
+        },
+        error: function () {
+
+        }
       });
     }
+
+    $(document).ready(function () {
+      $('.map').click(function () {
+        $('.map iframe').css("pointer-events", "auto");
+      });
+
+      $( ".map" ).mouseleave(function() {
+        $('.map iframe').css("pointer-events", "none"); 
+      });
+    });
   </script>
 </body>
 </html>
