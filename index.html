@@ -24,14 +24,21 @@
       list-style-type: none;
     }
 
-    h2, h4 {
+    h3, h4 {
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 40px;
     }
 
-    h2 {
-      margin-bottom: 80px;
+    h3 {
+      margin: 0px 0 60px;
+      background-image: url(title.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 40px;
+      width: 100% ; 
+      background-position: center center;
+      color: #fff;
     }
 
     ul,
@@ -60,6 +67,12 @@
       pointer-events: none;
       margin-bottom: 40px;
     }
+
+    .btn-primary {
+      background-color: #2C629A;
+      text-transform: uppercase;
+      padding: 20px 40px;
+    }
   </style>
 </head>
 <body>
@@ -76,7 +89,7 @@
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h2>The Venue</h2>
+        <h3>The Venue</h3>
         <p class="lead">The ceremony and reception will be held at the Plush Tents camp site in East Ashling, near Chichester:</p>
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80589.69675696355!2d-0.8865565384821644!3d50.860275279533994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48744de96db8cd49%3A0xf91b855285c57b6d!2sPlush+Tents+Glamping!5e0!3m2!1sen!2suk!4v1488841950917" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -95,20 +108,16 @@
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h2>On the Day</h2>
+        <h3>On the Day</h3>
 
         <h4>Timetable</h4>
         <ul class="timetable">
           <li class="row lead">
             <strong class="col-xs-6 text-right">2:30pm</strong>
-            <span class="col-xs-6">Site open for day guests</span>
+            <span class="col-xs-6">Site open for day guests and welcome drinks</span>
           </li>
           <li class="row lead">
             <strong class="col-xs-6 text-right">3:00pm</strong>
-            <span class="col-xs-6">Welcome drinks</span>
-          </li>
-          <li class="row lead">
-            <strong class="col-xs-6 text-right">3:30pm</strong>
             <span class="col-xs-6">Ceremony</span>
           </li>
           <li class="row lead">
@@ -133,7 +142,7 @@
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h2>Camping &amp; Accommodation</h2>
+        <h3>Camping &amp; Accommodation</h3>
 
         <p class="lead">We are inviting all our guests -- day and evening -- to camp with us on Saturday night after the Reception. Sunday will be spent relaxing (recovering!) and enjoying the Sussex countryside.</p>
 
@@ -157,7 +166,7 @@
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h2>Questions</h2>
+        <h3>Questions</h3>
 
         <h4>Is there a curfew for children?</h4>
         <p class="lead">Children are welcome throughout the day, although we ask that all under-16s are tucked up in bed by 9pm at the latest.</p>
@@ -176,7 +185,7 @@
     </section>
     <section class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h2>R.S.V.P.</h2>
+        <h3>R.S.V.P.</h3>
 
         <div class="success" style="display: none;">
           <p class="lead">Thanks! If you have any questions we'll be in touch!</p>
@@ -252,7 +261,7 @@
             </div>
           </div>
           <div class="form-group">
-            <div class="col-sm-8 col-sm-offset-4">
+            <div class="col-sm-6 col-sm-offset-4" >
               <input type="submit" value="Submit" class="btn btn-primary btn-lg">
             </div>
           </div>
